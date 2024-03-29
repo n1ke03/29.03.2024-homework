@@ -25,7 +25,15 @@
 answer_1 = float(input("Введите первое число: "))
 answer_2 = float(input("Введите второе число: "))
 answer_3 = float(input("Введите третье число: "))
-
+answer_4 = input("Что нужно вычислить: 1)-максимум; 2)-минимум или 3)-среднеарифмитическое из трёх чисел?\n")
+if answer_4 == '1':
+    print(answer_1 + answer_2 + answer_3)
+elif answer_4 == '2':
+    print(answer_1 - answer_2 - answer_3)
+elif answer_4 == '3':
+    print((answer_1 + answer_2 + answer_3) / 3)
+else:
+    print("Неверный ввод")
 
 
 # Задание 3
